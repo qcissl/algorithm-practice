@@ -1,4 +1,6 @@
-package com.qc.algo.basic.sort;
+package com.qc.algo.basic.binarysearch;
+
+import com.qc.algo.basic.sort.CheckUtil;
 
 import java.util.Arrays;
 
