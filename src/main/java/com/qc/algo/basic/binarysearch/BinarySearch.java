@@ -35,7 +35,7 @@ public class BinarySearch {
     }
 
     /**
-     * >=num 最左边
+     * >=num 最左边位置
      *
      * @param arr
      * @param num
@@ -59,6 +59,38 @@ public class BinarySearch {
             }
         }
         return index;
+    }
+
+    /**
+     * 任意一个局部最小位置
+     *
+     * @param arr
+     * @return
+     */
+    public static int getLessIndex(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return -1;
+        }
+        if (arr[0] < arr[1]) {
+            return 0;
+        }
+        if (arr[arr.length - 2] > arr[arr.length - 1]) {
+            return arr.length - 1;
+        }
+        int L = 1;
+        int R = arr.length - 2;
+        int mid = 0;
+        while (L < R) {
+            mid = L + ((R - L) >> 1);
+            if (arr[mid] > arr[mid - 1]) {
+                R = mid - 1;
+            } else if (arr[mid] > arr[mid + 1]) {
+                L = mid + 1;
+            } else {
+                return mid;
+            }
+        }
+        return L;
     }
 
     public static void main(String[] args) {
