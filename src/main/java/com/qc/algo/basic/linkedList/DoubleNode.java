@@ -8,8 +8,8 @@ package com.qc.algo.basic.linkedList;
 public class DoubleNode<T> {
 
     private T value;
-    private Node pre;
-    private Node next;
+    private DoubleNode pre;
+    private DoubleNode next;
 
     public DoubleNode(T value) {
         this.value = value;
@@ -23,19 +23,19 @@ public class DoubleNode<T> {
         this.value = value;
     }
 
-    public Node getPre() {
+    public DoubleNode getPre() {
         return pre;
     }
 
-    public void setPre(Node pre) {
+    public void setPre(DoubleNode pre) {
         this.pre = pre;
     }
 
-    public Node getNext() {
+    public DoubleNode getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(DoubleNode next) {
         this.next = next;
     }
 }

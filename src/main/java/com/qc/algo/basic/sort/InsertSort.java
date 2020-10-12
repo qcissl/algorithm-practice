@@ -15,7 +15,7 @@ public class InsertSort implements ArraySort {
         int N = arr.length;
         for (int i = 1; i < N; i++) {
             for (int j = i; j > 0 && arr[j] < arr[j - 1]; j--) {
-                CheckUtil.swap(j, j - 1, arr);
+                CheckCompareSortUtil.swap(j, j - 1, arr);
             }
         }
     }

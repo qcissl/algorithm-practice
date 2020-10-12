@@ -20,7 +20,7 @@ public class SelectSort implements ArraySort {
                 }
             }
 
-            CheckUtil.swap(i, minIndex, arr);
+            CheckCompareSortUtil.swap(i, minIndex, arr);
         }
     }
 

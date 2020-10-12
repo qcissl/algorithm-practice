@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @author qinc 2020/10/09 10:35
  */
-public class CheckUtil {
+public class CheckCompareSortUtil {
 
     public static int[] createArray(int size, int maxValue) {
         int[] arr = new int[size];

@@ -1,6 +1,6 @@
 package com.qc.algo.basic.binarySearch;
 
-import com.qc.algo.basic.sort.CheckUtil;
+import com.qc.algo.basic.sort.CheckCompareSortUtil;
 
 import java.util.Arrays;
 
@@ -97,7 +97,7 @@ public class BinarySearch {
         int num = 22;
         for (int j = 0; j < 100; j++) {
 
-            int[] origin = CheckUtil.createArray(10, 50);
+            int[] origin = CheckCompareSortUtil.createArray(10, 50);
             Arrays.sort(origin);
             boolean a = exist(origin, num);
 
