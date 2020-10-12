@@ -1,4 +1,4 @@
-package com.qc.algo.basic.binarysearch;
+package com.qc.algo.basic.binarySearch;
 
 import com.qc.algo.basic.sort.CheckUtil;
 
