@@ -21,7 +21,8 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.stack.StackByTwoQueue 两个队列实现栈
  * @see com.qc.algo.basic.queue.QueueByTwoStack 两个栈实现队列
  * <p>
- * 3）二叉树
+ * 3）归并排序和快速排序
+ * @see com.qc.algo.basic.sort.MergeSort 归并排序
  */
 public class Catalog {
 
