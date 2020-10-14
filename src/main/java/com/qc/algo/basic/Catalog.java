@@ -11,7 +11,7 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.binarySearch.BinarySearch 二分查找、局部最小
  * @see com.qc.algo.basic.exor.ExorOption 异或操作
  * <p>
- * 2）链表、队列、栈、递归
+ * 2）链表、队列、栈
  * @see com.qc.algo.basic.linkedList.ReverseLinkedList 翻转链表
  * @see com.qc.algo.basic.linkedList.RemoveValueLinkedList 删除链表给定值
  * @see com.qc.algo.basic.queue.MyQueue 链表实现队列
