@@ -29,17 +29,17 @@ public class MyStack<T> {
 
         MyStack<Integer> myStack = new MyStack<>();
         Stack<Integer> stack = new Stack<>();
-        for(int i = 0; i < 500; i++) {
-            int value = (int) (Math.random()*1000);
-            if (stack.isEmpty()){
+        for (int i = 0; i < 500; i++) {
+            int value = (int) (Math.random() * 1000);
+            if (stack.isEmpty()) {
                 myStack.push(value);
                 stack.push(value);
-            }else{
-                if (Math.random() < 0.5){
+            } else {
+                if (Math.random() < 0.5) {
                     myStack.push(value);
                     stack.push(value);
-                }else{
-                    if (myStack.pop().intValue()!= stack.pop().intValue()){
+                } else {
+                    if (myStack.pop().intValue() != stack.pop().intValue()) {
                         System.out.println("error");
                     }
                 }
