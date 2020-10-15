@@ -23,6 +23,12 @@ package com.qc.algo.basic;
  * <p>
  * 3）归并排序和快速排序
  * @see com.qc.algo.basic.sort.MergeSort 归并排序
+ * @see com.qc.algo.basic.recursion.SmallSum 小和累加问题
+ * @see com.qc.algo.basic.partition.Partition 分组问题
+ * @see com.qc.algo.basic.partition.DutchFlag 荷兰国旗问题
+ * @see com.qc.algo.basic.sort.QuickSortOne 快排1版本
+ * @see com.qc.algo.basic.sort.QuickSortTwo 快排2版本
+ * @see com.qc.algo.basic.sort.QuickSortThree 快排3版本
  */
 public class Catalog {
 
