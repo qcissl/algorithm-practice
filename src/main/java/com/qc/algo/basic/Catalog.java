@@ -29,6 +29,12 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.sort.QuickSortOne 快排1版本
  * @see com.qc.algo.basic.sort.QuickSortTwo 快排2版本
  * @see com.qc.algo.basic.sort.QuickSortThree 快排3版本
+ * <p>
+ * 4）比较器与堆
+ * @see com.qc.algo.basic.heap.BigRootHeap 大根堆
+ * @see com.qc.algo.basic.sort.BigRootHeapSort 大根堆排序
+ * @see com.qc.algo.basic.heap.SmallRootHeap 小根堆带resized功能
+ * @see com.qc.algo.basic.sort.SmallRootHeapSort 小根堆排序
  */
 public class Catalog {
 
