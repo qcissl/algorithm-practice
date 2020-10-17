@@ -41,6 +41,10 @@ public class SmallRootHeap<T> {
         return heap.size() == 0;
     }
 
+    public int size(){
+        return heap.size();
+    }
+
     public void push(T t) {
         heap.add(t);
         heapIndex.put(t, heap.size() - 1);
