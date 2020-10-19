@@ -59,4 +59,16 @@ public class CheckCompareSortUtil {
     public static boolean checkArray(ArraySort arraySort) {
         return checkArray(arraySort, 100000, 100, 500000);
     }
+
+    public static boolean checkArray(int[] sample1,int[] sample2){
+        for (int i = 0; i < sample1.length; i++) {
+            if (sample1[i] != sample2[i]) {
+                System.out.println("error");
+                System.out.println(Arrays.toString(sample1));
+                System.out.println(Arrays.toString(sample2));
+                return false;
+            }
+        }
+        return true;
+    }
 }

@@ -36,6 +36,11 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.heap.SmallRootHeap 小根堆带resized功能
  * @see com.qc.algo.basic.sort.SmallRootHeapSort 小根堆排序
  * @see com.qc.algo.basic.heap.SortArrayDistanceLessK 移动的距离不超过k的数组排序
+ * <p>
+ * 5）前缀树与桶排序
+ * @see com.qc.algo.basic.trie.TrieTree 前缀树
+ * @see com.qc.algo.basic.bucket.CountSort 计数排序
+ * @see com.qc.algo.basic.bucket.RadixSort 基数排序
  */
 public class Catalog {
 
