@@ -7,8 +7,8 @@ package com.qc.algo.basic.linkedList;
  */
 public class Node<T> {
 
-    private T value;
-    private Node next;
+    T value;
+    Node next;
 
     public Node(T value) {
         this.value = value;

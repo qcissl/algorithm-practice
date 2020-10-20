@@ -41,6 +41,13 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.trie.TrieTree 前缀树
  * @see com.qc.algo.basic.bucket.CountSort 计数排序
  * @see com.qc.algo.basic.bucket.RadixSort 基数排序
+ * <p>
+ * 6）链表相关习题
+ * @see com.qc.algo.basic.linkedList.LinkedListMid 链表中点附近节点
+ * @see com.qc.algo.basic.linkedList.IsPalindromeList 判断链表是否是回文
+ * @see com.qc.algo.basic.linkedList.LinkedListPartition 对单链表做荷兰国旗问题
+ * @see com.qc.algo.basic.linkedList.CopyListWithRandom 复制带有随机指针的单链表
+ * @see com.qc.algo.basic.linkedList.FindFirstIntersectNode 返回俩个单链表相交的第一个节点
  */
 public class Catalog {
 

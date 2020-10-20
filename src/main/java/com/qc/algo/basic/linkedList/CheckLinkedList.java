@@ -32,6 +32,16 @@ public class CheckLinkedList {
         return head;
     }
 
+    public static Node createNode(int[] arr) {
+        Node<Integer> head = new Node<>(arr[0]);
+        Node node = head;
+        for (int i = 1; i < arr.length; i++) {
+            node.setNext(new Node(arr[i]));
+            node = node.getNext();
+        }
+        return head;
+    }
+
     public static void main(String[] args) {
         Node<Integer> head = createSingleList(5, 100);
 
