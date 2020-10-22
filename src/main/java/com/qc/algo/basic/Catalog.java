@@ -48,6 +48,15 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.linkedList.LinkedListPartition 对单链表做荷兰国旗问题
  * @see com.qc.algo.basic.linkedList.CopyListWithRandom 复制带有随机指针的单链表
  * @see com.qc.algo.basic.linkedList.FindFirstIntersectNode 返回俩个单链表相交的第一个节点
+ * <p>
+ * 7）二叉树的基本算法
+ * @see com.qc.algo.basic.binaryTree.RecursiveTraversalBT 二叉树的先序、中序、后续递归遍历
+ * @see com.qc.algo.basic.binaryTree.UnRecursiveTraversalBT 二叉树的先序、中序、后续非递归遍历
+ * @see com.qc.algo.basic.binaryTree.LevelTraversalBT 二叉树宽度优先遍历
+ * @see com.qc.algo.basic.binaryTree.SerializeAndReconstructBT 二叉树的序列化与反序列化
+ * @see com.qc.algo.basic.binaryTree.TreeMaxWidth 二叉树的最大宽度
+ * @see com.qc.algo.basic.binaryTree.SuccessorNode 二叉树任意一个点的后继节点（中序遍历）
+ * @see com.qc.algo.basic.binaryTree.PaperFolding 白纸折痕问题
  */
 public class Catalog {
 
