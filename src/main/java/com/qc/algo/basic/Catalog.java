@@ -57,6 +57,17 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.binaryTree.TreeMaxWidth 二叉树的最大宽度
  * @see com.qc.algo.basic.binaryTree.SuccessorNode 二叉树任意一个点的后继节点（中序遍历）
  * @see com.qc.algo.basic.binaryTree.PaperFolding 白纸折痕问题
+ * <p>
+ * 8）二叉树递归套路
+ * @see com.qc.algo.basic.binaryTreeDP.BalancedBinaryTree 是否平衡二叉树
+ * @see com.qc.algo.basic.binaryTreeDP.FullBinaryTree 是否满二叉树
+ * @see com.qc.algo.basic.binaryTreeDP.CompleteBinaryTree 是否完全二叉树
+ * @see com.qc.algo.basic.binaryTreeDP.SearchBinaryTree 是否搜索二叉树
+ * @see com.qc.algo.basic.binaryTreeDP.MaxSubSBTHead 二叉树最大的搜索子树的头节点
+ * @see com.qc.algo.basic.binaryTreeDP.MaxSubSBTSize 二叉树最大的搜索子树的大小
+ * @see com.qc.algo.basic.binaryTreeDP.LowestAncestor 二叉树上任意两个节点的最低公共祖先
+ * @see com.qc.algo.basic.binaryTreeDP.MaxDistance 二叉树的最大距离
+ * @see com.qc.algo.basic.binaryTreeDP.MaxHappy 派对的最大快乐值
  */
 public class Catalog {
 
