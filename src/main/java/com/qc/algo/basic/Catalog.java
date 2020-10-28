@@ -68,6 +68,12 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.binaryTreeDP.LowestAncestor 二叉树上任意两个节点的最低公共祖先
  * @see com.qc.algo.basic.binaryTreeDP.MaxDistance 二叉树的最大距离
  * @see com.qc.algo.basic.binaryTreeDP.MaxHappy 派对的最大快乐值
+ * <p>
+ * 9）贪心算法
+ * @see com.qc.algo.basic.greedy.LowestLexicography 必须把所有的字符串拼接起来，返回所有可能的拼接结果中，字典序最小的结果
+ * @see com.qc.algo.basic.greedy.StreetLight 路灯摆放问题
+ * @see com.qc.algo.basic.greedy.LessMoneySplitGold 黄金分割问题（哈夫曼树）
+ * @see com.qc.algo.basic.greedy.BestArrange 会议室安排会议场次最多
  */
 public class Catalog {
 
