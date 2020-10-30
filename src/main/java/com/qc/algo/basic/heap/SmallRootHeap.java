@@ -41,7 +41,7 @@ public class SmallRootHeap<T> {
         return heap.size() == 0;
     }
 
-    public int size(){
+    public int size() {
         return heap.size();
     }
 
@@ -49,6 +49,10 @@ public class SmallRootHeap<T> {
         heap.add(t);
         heapIndex.put(t, heap.size() - 1);
         heapInsert(heap.size() - 1);
+    }
+
+    public boolean contains(T t) {
+        return heapIndex.containsKey(t);
     }
 
     public T pop() {
@@ -119,15 +123,15 @@ public class SmallRootHeap<T> {
             }
         });
 
-        Student i1 = new Student("i1",5245);
+        Student i1 = new Student("i1", 5245);
         smallRootHeap.push(i1);
-        Student i2 = new Student("i2",436);
+        Student i2 = new Student("i2", 436);
         smallRootHeap.push(i2);
-        Student i3 = new Student("i3",45754);
+        Student i3 = new Student("i3", 45754);
         smallRootHeap.push(i3);
-        Student i4 = new Student("i4",344);
+        Student i4 = new Student("i4", 344);
         smallRootHeap.push(i4);
-        Student i5 = new Student("i5",4666);
+        Student i5 = new Student("i5", 4666);
         smallRootHeap.push(i5);
 
         smallRootHeap.printHeap();
@@ -137,7 +141,7 @@ public class SmallRootHeap<T> {
         smallRootHeap.printHeap();
     }
 
-    public static class Student{
+    public static class Student {
         String name;
         Integer age;
 

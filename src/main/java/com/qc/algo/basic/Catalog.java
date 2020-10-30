@@ -74,6 +74,16 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.greedy.StreetLight 路灯摆放问题
  * @see com.qc.algo.basic.greedy.LessMoneySplitGold 黄金分割问题（哈夫曼树）
  * @see com.qc.algo.basic.greedy.BestArrange 会议室安排会议场次最多
+ * <p>
+ * 10）并查集与图
+ * @see com.qc.algo.basic.unionSet.UnionFindSet 并查集
+ * @see com.qc.algo.basic.unionSet.MergeUsers 合并相同属性的用户
+ * @see com.qc.algo.basic.graph.GraphBFS 图的宽度遍历
+ * @see com.qc.algo.basic.graph.GraphDFS 图的深度遍历
+ * @see com.qc.algo.basic.graph.TopologySort 图的拓扑排序
+ * @see com.qc.algo.basic.graph.Kruskal 最小生成树 K算法
+ * @see com.qc.algo.basic.graph.Prim 最小生成树 P算法
+ * @see com.qc.algo.basic.graph.Dijkstra 最短路径
  */
 public class Catalog {
 
