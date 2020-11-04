@@ -11,9 +11,9 @@ import java.util.Map;
  * @author qinc 2020/10/30 11:01
  */
 public class SmallRootHeapForDijkstra {
-    Dijkstra.NodeRecord[] records;
-    Map<Dijkstra.NodeRecord, Integer> heapIndex = new HashMap<>();
-    Map<Dijkstra.NodeRecord, Integer> existMap = new HashMap<>();
+    Node[] records;
+    Map<Node, Integer> heapIndex = new HashMap<>();
+    Map<Node, Dijkstra.NodeRecord> existMap = new HashMap<>();
     int size = 0;
     Comparator<Dijkstra.NodeRecord> comparator = new Comparator<Dijkstra.NodeRecord>() {
         @Override
@@ -23,20 +23,21 @@ public class SmallRootHeapForDijkstra {
     };
 
     public SmallRootHeapForDijkstra(int limit) {
-        this.records = new Dijkstra.NodeRecord[limit];
+        this.records = new Node[limit];
     }
 
     public void push(Dijkstra.NodeRecord record) {
-        heapIndex.put(record, size);
-        existMap.put(record, 1);
-        records[size] = record;
+        heapIndex.put(record.node, size);
+        existMap.put(record.node, record);
+        records[size] = record.node;
         heapInsert(size++);
     }
 
     public Dijkstra.NodeRecord pop() {
-        Dijkstra.NodeRecord record = records[0];
+        Node node = records[0];
+        Dijkstra.NodeRecord record = new Dijkstra.NodeRecord(node, existMap.get(node).weight);
         heapIndex.remove(record);
-        existMap.put(record, -1);
+        existMap.get(node).weight = -1;
         swap(0, --size, records);
         records[size + 1] = null;
         heapfiy(0, size);
@@ -44,7 +45,7 @@ public class SmallRootHeapForDijkstra {
     }
 
     public void resized(Dijkstra.NodeRecord record) {
-        Integer index = heapIndex.get(record);
+        Integer index = heapIndex.get(record.node);
         if (index == null) {
             return;
         }
@@ -53,12 +54,13 @@ public class SmallRootHeapForDijkstra {
     }
 
     public void insertOrUpdateOrIgnore(Dijkstra.NodeRecord record) {
-        Integer index = existMap.get(record);
+        Dijkstra.NodeRecord index = existMap.get(record.node);
         if (index == null) {
             push(record);
-        } else if (index == -1) {
+        } else if (index.weight == -1) {
             return;
         } else {
+            index.weight = Math.min(index.weight, record.weight);
             resized(record);
         }
 
@@ -69,9 +71,9 @@ public class SmallRootHeapForDijkstra {
         int right = left + 1;
         while (left < size) {
             if (right < size) {
-                left = comparator.compare(records[left], records[right]) < 0 ? left : right;
+                left = comparator.compare(existMap.get(records[left]), existMap.get(records[right])) < 0 ? left : right;
             }
-            if (comparator.compare(records[index], records[left]) > 0) {
+            if (comparator.compare(existMap.get(records[index]), existMap.get(records[left])) > 0) {
                 swap(left, index, records);
                 index = left;
                 left = index * 2 + 1;
@@ -84,17 +86,17 @@ public class SmallRootHeapForDijkstra {
 
     private void heapInsert(int index) {
         int parent = (index - 1) / 2;
-        while (comparator.compare(records[parent], records[index]) > 0) {
+        while (comparator.compare(existMap.get(records[parent]), existMap.get(records[index])) > 0) {
             swap(parent, index, records);
             index = parent;
             parent = (index - 1) / 2;
         }
     }
 
-    private void swap(int i, int j, Dijkstra.NodeRecord[] arr) {
+    private void swap(int i, int j, Node[] arr) {
         heapIndex.put(arr[i], j);
         heapIndex.put(arr[j], i);
-        Dijkstra.NodeRecord temp = arr[i];
+        Node temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
