@@ -84,6 +84,18 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.graph.Kruskal 最小生成树 K算法
  * @see com.qc.algo.basic.graph.Prim 最小生成树 P算法
  * @see com.qc.algo.basic.graph.Dijkstra 最短路径
+ * <p>
+ * 11）暴力递归
+ * @see com.qc.algo.basic.recursion.Hanluota 汉罗塔
+ * @see com.qc.algo.basic.recursion.PrintAllSubsquences 全部子序列
+ * @see com.qc.algo.basic.recursion.PrintAllPermutations 全部子串
+ * @see com.qc.algo.basic.recursion.ReverseStackUsingRecursive 使用递归翻转栈
+ * @see com.qc.algo.basic.recursion.ConvertToLetterString 规定1和A对应、2和B对应,给定一个只有数字字符组成的字符串str，返回有多少种转化结果
+ * @see com.qc.algo.basic.recursion.Knapsack 背包问题
+ * @see com.qc.algo.basic.recursion.CardGame 纸牌游戏，每个玩家每次只能拿走最左或最右的纸牌，请返回最后获胜者的分数。
+ * @see com.qc.algo.basic.recursion.NQueens N皇后问题，要求任何两个皇后不同行、不同列， 也不在同一条斜线上
+ * <p>
+ * 12）动态规划
  */
 public class Catalog {
 
