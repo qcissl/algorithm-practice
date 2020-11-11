@@ -96,6 +96,11 @@ package com.qc.algo.basic;
  * @see com.qc.algo.basic.recursion.NQueens N皇后问题，要求任何两个皇后不同行、不同列， 也不在同一条斜线上
  * <p>
  * 12）动态规划
+ * @see com.qc.algo.basic.dp.RobotWalk 机器人移动问题
+ * @see com.qc.algo.basic.dp.CoinsWay 使用不限次数的面值的货币组成想要金额的钱数
+ * @see com.qc.algo.basic.dp.LongestCommonSubSequence 最长公共子序列
+ * @see com.qc.algo.basic.dp.WashCoffee 洗咖啡机问题
+ * @see com.qc.algo.basic.dp.HorseJump 象棋跳马
  */
 public class Catalog {
 

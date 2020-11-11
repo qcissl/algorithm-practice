@@ -28,8 +28,32 @@ public class CardGame {
         return Math.min(first(arr, L + 1, R), first(arr, L, R - 1));
     }
 
+    public static int winnerDp(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return 0;
+        }
+        int[][] f = new int[arr.length][arr.length];
+        int[][] s = new int[arr.length][arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            f[i][i] = arr[i];
+        }
+
+        for (int L = arr.length - 2; L >= 0; L--) {
+            for (int R = 1; R < arr.length; R++) {
+                if (L <= R) {
+                    f[L][R] = Math.max(arr[L] + s[L + 1][R], arr[R] + s[L][R - 1]);
+                    s[L][R] = Math.min(f[L + 1][R], f[L][R - 1]);
+                }
+            }
+        }
+
+        return Math.max(f[0][arr.length - 1], s[0][arr.length - 1]);
+    }
+
     public static void main(String[] args) {
-        int[] arr = {4, 7, 9, 5, 19, 29, 80, 4};
+        int[] arr = {5, 7, 4, 5, 8, 1, 6, 0, 3, 4, 6, 1, 7};
         System.out.println(winner(arr));
+        System.out.println(winnerDp(arr));
     }
 }
