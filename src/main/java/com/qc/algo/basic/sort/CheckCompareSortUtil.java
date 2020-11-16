@@ -1,6 +1,8 @@
 package com.qc.algo.basic.sort;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * description
@@ -13,6 +15,22 @@ public class CheckCompareSortUtil {
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = (int) (Math.random() * (maxValue + 1));
+        }
+        return arr;
+    }
+    public static int[] createArrayNoRepeat(int size, int maxValue) {
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = (int) (Math.random() * (maxValue + 1));
+        }
+        Set<Integer> set = new HashSet<>();
+        for(int i:arr){
+            set.add(i);
+        }
+        arr = new int[set.size()];
+        Integer[] objects = set.toArray(new Integer[]{});
+        for(int i = 0; i < objects.length; i++) {
+            arr[i] = objects[i];
         }
         return arr;
     }
@@ -60,7 +78,13 @@ public class CheckCompareSortUtil {
         return checkArray(arraySort, 100000, 100, 500000);
     }
 
-    public static boolean checkArray(int[] sample1,int[] sample2){
+    public static boolean checkArray(int[] sample1, int[] sample2) {
+        if (sample1 == sample2) {
+            return true;
+        }
+        if (sample1.length != sample2.length) {
+            return false;
+        }
         for (int i = 0; i < sample1.length; i++) {
             if (sample1[i] != sample2[i]) {
                 System.out.println("error");
