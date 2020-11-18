@@ -10,6 +10,13 @@ package com.qc.algo.trainingCamp;
  * @see com.qc.algo.trainingCamp.slidingWindow.AllLessNumSubArray 子数组最大值减最小值小于一个数的子数组数量
  * @see com.qc.algo.trainingCamp.monotonousStack.MonotonousStack 单调栈
  * @see com.qc.algo.trainingCamp.monotonousStack.AllTimesMinToMax 子数组sub(sub累加和 )* (sub中的最小值)获得最大值
+ * b）斐波那契数列
+ * @see com.qc.algo.trainingCamp.fibonacci.FibonacciProblem 斐波那契数列 O(logN) 复杂度
+ * @see com.qc.algo.trainingCamp.fibonacci.ZeroLeftOneStringNumber 任何0字符的左边都紧挨着1,长度为N的字符串符合要求个数
+ * c）蓄水池算法
+ * @see com.qc.algo.trainingCamp.reservoir.ReservoirSampling 蓄水池算法
+ * d）KMP算法
+ * @see com.qc.algo.trainingCamp.kmp.KMP KMP算法
  */
 public class Catalog {
 
