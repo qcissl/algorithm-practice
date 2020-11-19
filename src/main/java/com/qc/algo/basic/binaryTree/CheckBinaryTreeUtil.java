@@ -12,7 +12,7 @@ public class CheckBinaryTreeUtil {
     }
 
     public static TreeNode generate(int level, int maxLevel, int maxValue) {
-        if (level > 1 && (level > maxLevel || Math.random() < 0.5)) {
+        if (level > 1 && (level > maxLevel || Math.random() < 0.1)) {
             return null;
         }
         TreeNode head = new TreeNode((int) (Math.random() * maxValue));

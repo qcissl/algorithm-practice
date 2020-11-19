@@ -53,9 +53,6 @@ public class KMP {
     }
 
     public static void main(String[] args) {
-//        String str = getRandomString(10,10);
-//        System.out.println(str);
-//        System.out.println(Arrays.toString(getNext(str.toCharArray())));
         int possibilities = 5;
         int strSize = 20;
         int matchSize = 5;

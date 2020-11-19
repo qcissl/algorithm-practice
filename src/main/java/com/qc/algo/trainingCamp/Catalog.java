@@ -17,6 +17,8 @@ package com.qc.algo.trainingCamp;
  * @see com.qc.algo.trainingCamp.reservoir.ReservoirSampling 蓄水池算法
  * d）KMP算法
  * @see com.qc.algo.trainingCamp.kmp.KMP KMP算法
+ * @see com.qc.algo.trainingCamp.kmp.RotationStr 判断两个字符串是否互为旋转
+ * @see com.qc.algo.trainingCamp.kmp.TreeMatch 判断两颗树某个子树的结构和另一个树完全一样
  */
 public class Catalog {
 
